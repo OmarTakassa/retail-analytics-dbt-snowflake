@@ -19,7 +19,7 @@ The transformation pipeline follows modern data architecture principles to ensur
 ## 🎯 Business Context
 
 * **Problem:** High-growth retail platforms generate raw, fragmented transaction logs across orders, customers, products, and payments. Raw queries are slow, metrics drift across teams, and historical changes (like customer location shifts) are lost.
-* **Analytics Engineering Solution:** A modular data pipeline built with dbt and Snowflake that enforces software engineering best practices—automated testing, version control, clear modeling layers, and dynamic environment builds.
+* **Analytics Engineering Solution:** A modular data pipeline built with dbt and Snowflake that enforces software engineering best practices automated testing, version control, clear modeling layers, and dynamic environment builds.
 
 ---
 
