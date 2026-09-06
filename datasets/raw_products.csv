@@ -1,0 +1,21 @@
+product_id,product_name,category,subcategory,brand,unit_price,cost_price,weight_kg,is_active,created_at,updated_at
+101,Wireless Bluetooth Headphones,Electronics,Audio,SoundWave,79.99,35.00,0.25,true,2023-01-01 00:00:00,2024-06-01 00:00:00
+102,Organic Green Tea (50 bags),Grocery,Beverages,PureLeaf,12.99,4.50,0.30,true,2023-01-01 00:00:00,2024-01-01 00:00:00
+103,Running Shoes - Men,Apparel,Footwear,SprintMax,129.99,52.00,0.80,true,2023-01-01 00:00:00,2024-09-15 00:00:00
+104,Stainless Steel Water Bottle,Home,Kitchen,HydroLife,24.99,8.00,0.35,true,2023-01-01 00:00:00,2024-01-01 00:00:00
+105,Yoga Mat Premium,Sports,Fitness,FlexZone,49.99,15.00,1.20,true,2023-02-15 00:00:00,2024-02-15 00:00:00
+106,USB-C Charging Cable 6ft,Electronics,Accessories,TechLink,14.99,3.00,0.05,true,2023-02-15 00:00:00,2024-02-15 00:00:00
+107,Organic Almonds 1lb,Grocery,Snacks,NutriFarm,15.99,6.50,0.45,true,2023-03-01 00:00:00,2024-03-01 00:00:00
+108,Women's Running Jacket,Apparel,Outerwear,SprintMax,89.99,38.00,0.40,true,2023-03-01 00:00:00,2024-11-01 00:00:00
+109,Smart Watch Band,Electronics,Wearables,TechLink,29.99,10.00,0.08,true,2023-04-01 00:00:00,2024-04-01 00:00:00
+110,French Press Coffee Maker,Home,Kitchen,BrewMaster,34.99,12.00,0.90,true,2023-04-01 00:00:00,2024-04-01 00:00:00
+111,Resistance Bands Set,Sports,Fitness,FlexZone,19.99,5.00,0.30,true,2023-05-01 00:00:00,2024-05-01 00:00:00
+112,Laptop Stand Adjustable,Electronics,Accessories,TechLink,44.99,18.00,1.50,true,2023-05-01 00:00:00,2024-08-01 00:00:00
+113,Protein Powder Vanilla 2lb,Grocery,Supplements,NutriFarm,39.99,16.00,0.95,true,2023-06-01 00:00:00,2024-06-01 00:00:00
+114,Cotton T-Shirt Men,Apparel,Tops,BasicWear,19.99,6.00,0.20,true,2023-06-01 00:00:00,2024-06-01 00:00:00
+115,Ceramic Plant Pot Set,Home,Decor,GreenSpace,32.99,11.00,2.00,true,2023-07-01 00:00:00,2024-07-01 00:00:00
+116,Noise Cancelling Earbuds,Electronics,Audio,SoundWave,149.99,60.00,0.15,true,2023-08-01 00:00:00,2025-01-01 00:00:00
+117,Hiking Backpack 40L,Sports,Outdoor,TrailBlazer,79.99,30.00,1.10,true,2023-09-01 00:00:00,2024-09-01 00:00:00
+118,Bamboo Cutting Board,Home,Kitchen,EcoHome,22.99,7.00,0.80,true,2023-10-01 00:00:00,2024-10-01 00:00:00
+119,Women's Yoga Pants,Apparel,Activewear,FlexZone,54.99,20.00,0.25,true,2023-11-01 00:00:00,2024-11-01 00:00:00
+120,Portable Bluetooth Speaker,Electronics,Audio,SoundWave,59.99,22.00,0.50,true,2023-12-01 00:00:00,2025-02-01 00:00:00

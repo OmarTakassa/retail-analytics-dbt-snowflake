@@ -1,0 +1,21 @@
+customer_id,first_name,last_name,email,phone,address_line1,city,state,zip_code,country,created_at,updated_at,is_active
+1,James,Wilson,james.wilson@email.com,555-0101,123 Oak Street,New York,NY,10001,US,2023-01-15 08:30:00,2024-06-10 14:20:00,true
+2,Sarah,Chen,sarah.chen@email.com,555-0102,456 Maple Ave,San Francisco,CA,94102,US,2023-02-20 10:15:00,2024-08-15 09:45:00,true
+3,Michael,Rodriguez,m.rodriguez@email.com,555-0103,789 Pine Road,Chicago,IL,60601,US,2023-03-05 14:00:00,2024-03-05 14:00:00,true
+4,Emily,Thompson,emily.t@email.com,555-0104,321 Elm Blvd,Austin,TX,73301,US,2023-04-12 11:30:00,2025-01-20 16:30:00,true
+5,David,Kim,david.kim@email.com,555-0105,654 Cedar Lane,Seattle,WA,98101,US,2023-05-18 09:00:00,2024-05-18 09:00:00,true
+6,Jessica,Patel,j.patel@email.com,555-0106,987 Birch Court,Boston,MA,02101,US,2023-06-22 16:45:00,2024-11-30 10:15:00,true
+7,Robert,Johnson,rob.j@email.com,555-0107,147 Walnut Drive,Denver,CO,80201,US,2023-07-08 13:20:00,2024-07-08 13:20:00,false
+8,Amanda,Lee,amanda.lee@email.com,555-0108,258 Spruce Way,Portland,OR,97201,US,2023-08-14 07:50:00,2025-02-14 08:00:00,true
+9,Christopher,Brown,c.brown@email.com,555-0109,369 Ash Place,Miami,FL,33101,US,2023-09-25 12:10:00,2024-09-25 12:10:00,true
+10,Maria,Garcia,maria.g@email.com,555-0110,471 Willow Street,Phoenix,AZ,85001,US,2023-10-30 15:35:00,2024-12-15 11:20:00,true
+11,Daniel,Williams,dan.w@email.com,555-0111,582 Hickory Ave,Atlanta,GA,30301,US,2023-11-05 10:00:00,2025-03-01 09:00:00,true
+12,Jennifer,Martinez,jen.m@email.com,555-0112,693 Poplar Road,Dallas,TX,75201,US,2023-12-12 08:25:00,2024-12-12 08:25:00,true
+13,William,Anderson,will.a@email.com,555-0113,804 Cypress Blvd,Nashville,TN,37201,US,2024-01-18 14:40:00,2025-01-18 14:40:00,true
+14,Sophia,Taylor,sophia.t@email.com,555-0114,915 Magnolia Lane,Minneapolis,MN,55401,US,2024-02-22 11:55:00,2024-10-22 11:55:00,true
+15,Alexander,Thomas,alex.t@email.com,555-0115,126 Dogwood Court,Raleigh,NC,27601,US,2024-03-28 09:15:00,2025-02-28 13:30:00,true
+16,Olivia,Jackson,olivia.j@email.com,555-0116,237 Juniper Drive,San Diego,CA,92101,US,2024-04-05 16:00:00,2024-04-05 16:00:00,true
+17,Benjamin,White,ben.w@email.com,555-0117,348 Sycamore Way,Charlotte,NC,28201,US,2024-05-10 13:30:00,2024-11-10 15:45:00,true
+18,Isabella,Harris,bella.h@email.com,555-0118,459 Chestnut Place,Columbus,OH,43201,US,2024-06-15 10:20:00,2024-06-15 10:20:00,true
+19,Ethan,Clark,ethan.c@email.com,555-0119,560 Redwood Street,Indianapolis,IN,46201,US,2024-07-20 07:45:00,2025-01-20 12:00:00,true
+20,Mia,Lewis,mia.l@email.com,555-0120,671 Palm Ave,Jacksonville,FL,32099,US,2024-08-25 15:10:00,2024-08-25 15:10:00,true
