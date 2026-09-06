@@ -1,0 +1,119 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Cleaned and standardized customer data. One row per customer."
+    columns:
+      - name: customer_id
+        description: "Primary key — unique identifier for each customer"
+        data_tests:
+          - unique
+          - not_null
+      - name: email
+        description: "Customer email address, lowercased and trimmed"
+        data_tests:
+          - unique
+          - not_null
+      - name: full_name
+        description: "Concatenated first_name + last_name"
+        data_tests:
+          - not_null
+      - name: state_code
+        description: "Two-letter US state code, uppercased"
+      - name: is_active
+        description: "Whether the customer account is currently active"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: [true, false]
+
+  - name: stg_products
+    description: "Cleaned and standardized product catalog. One row per product."
+    columns:
+      - name: product_id
+        description: "Primary key — unique identifier for each product"
+        data_tests:
+          - unique
+          - not_null
+      - name: product_name
+        description: "Product display name, trimmed"
+        data_tests:
+          - not_null
+      - name: category
+        description: "Top-level product category (Electronics, Grocery, Apparel, Home, Sports)"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['Electronics', 'Grocery', 'Apparel', 'Home', 'Sports']
+      - name: unit_price
+        description: "Current selling price in USD"
+        data_tests:
+          - not_null
+      - name: cost_price
+        description: "Cost to acquire/manufacture the product in USD"
+        data_tests:
+          - not_null
+      - name: profit_margin_pct
+        description: "Calculated profit margin percentage: (unit_price - cost_price) / unit_price * 100"
+
+  - name: stg_orders
+    description: "Cleaned and standardized order headers. One row per order."
+    columns:
+      - name: order_id
+        description: "Primary key — unique identifier for each order"
+        data_tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Foreign key to stg_customers"
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: order_status
+        description: "Current order status: completed, cancelled, returned"
+        data_tests:
+          - not_null
+          - accepted_values:
+              values: ['completed', 'cancelled', 'returned']
+      - name: payment_method
+        description: "Payment method used: credit_card, debit_card, paypal"
+        data_tests:
+          - accepted_values:
+              values: ['credit_card', 'debit_card', 'paypal']
+      - name: total_amount
+        description: "Total order amount in USD including tax and shipping"
+        data_tests:
+          - not_null
+
+  - name: stg_order_items
+    description: "Cleaned and standardized order line items. One row per product per order."
+    columns:
+      - name: order_item_id
+        description: "Primary key — unique identifier for each line item"
+        data_tests:
+          - unique
+          - not_null
+      - name: order_id
+        description: "Foreign key to stg_orders"
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+      - name: product_id
+        description: "Foreign key to stg_products"
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+      - name: quantity
+        description: "Number of units ordered"
+        data_tests:
+          - not_null
+      - name: net_amount
+        description: "Line item total after discount: quantity * unit_price * (1 - discount_pct/100)"
+        data_tests:
+          - not_null
