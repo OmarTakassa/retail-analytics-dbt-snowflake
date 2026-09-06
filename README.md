@@ -6,7 +6,7 @@ This project implements a **Medallion Architecture** (Raw → Staging → Interm
 
 ---
 
-## 🏗️ Architecture & Data Lineage
+## Architecture & Data Lineage
 
 The transformation pipeline follows modern data architecture principles to ensure data reliability and operational efficiency.
 
@@ -16,14 +16,14 @@ The transformation pipeline follows modern data architecture principles to ensur
 
 ---
 
-## 🎯 Business Context
+## Business Context
 
 * **Problem:** High-growth retail platforms generate raw, fragmented transaction logs across orders, customers, products, and payments. Raw queries are slow, metrics drift across teams, and historical changes (like customer location shifts) are lost.
 * **Analytics Engineering Solution:** A modular data pipeline built with dbt and Snowflake that enforces software engineering best practices automated testing, version control, clear modeling layers, and dynamic environment builds.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Layer / Domain | Function in Pipeline |
 | :--- | :--- | :--- |
@@ -35,7 +35,7 @@ The transformation pipeline follows modern data architecture principles to ensur
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Kimball Dimensional Modeling:** Standardized data mart consisting of core facts (`fact_orders`) surrounded by descriptive dimensions (`dim_customers`, `dim_products`, `dim_dates`).
 * **SCD Type 2 Historical Tracking:** Implemented via dbt snapshots to track change history on customer records over time.
@@ -46,7 +46,7 @@ The transformation pipeline follows modern data architecture principles to ensur
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 DBT_Ecommerce_Warehouse/
