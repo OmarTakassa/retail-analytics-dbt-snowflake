@@ -1,0 +1,56 @@
+name: 'DBT_Retail_Warehouse'
+version: '1.0.0'
+config-version: 2
+
+# This is the profile name from ~/.dbt/profiles.yml
+profile: 'DBT_Retail_Warehouse'
+
+# Where dbt looks for models, tests, etc
+model-paths: ["scripts"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["datasets"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+# How dbt cleans up
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model-level configurations
+models:
+  DBT_Retail_Warehouse:
+    # Staging models: views (cheap, always fresh)
+    staging:
+      +materialized: view
+      +schema: staging
+      +tags: ['staging']
+
+    # Intermediate models: ephemeral (don't create tables, just CTEs)
+    intermediate:
+      +materialized: ephemeral
+      +tags: ['intermediate']
+
+    # Mart models: tables (materialized for performance)
+    marts:
+      +materialized: table
+      +schema: marts
+      +tags: ['marts']
+
+# Dataset configurations
+datasets:
+  DBT_Retail_Warehouse:
+    +schema: raw
+    +quote_columns: false
+
+# Snapshot configurations
+snapshots:
+  DBT_Retail_Warehouse:
+    +target_schema: snapshots
+
+# Variables
+vars:
+  # Date range for filtering (useful for dev vs prod)
+  start_date: '2023-01-01'
+  end_date: '2025-12-31'
