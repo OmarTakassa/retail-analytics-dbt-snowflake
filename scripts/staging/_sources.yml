@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw e-commerce data loaded via dbt seeds"
+    schema: raw
+    tables:
+      - name: raw_customers
+        description: "Raw customer records from the e-commerce platform"
+        columns:
+          - name: customer_id
+            description: "Primary key for customers"
+            data_tests:
+              - unique
+              - not_null
+
+      - name: raw_products
+        description: "Raw product catalog from the e-commerce platform"
+        columns:
+          - name: product_id
+            description: "Primary key for products"
+            data_tests:
+              - unique
+              - not_null
+
+      - name: raw_orders
+        description: "Raw order header records"
+        columns:
+          - name: order_id
+            description: "Primary key for orders"
+            data_tests:
+              - unique
+              - not_null
+
+      - name: raw_order_items
+        description: "Raw order line items — one row per product per order"
+        columns:
+          - name: order_item_id
+            description: "Primary key for order items"
+            data_tests:
+              - unique
+              - not_null
